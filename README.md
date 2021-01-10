@@ -4,16 +4,18 @@ Our project aims at mining a Social Media Dataset to find the connected users. U
 In this project, given a dataset (social media) can be used to find the connected users. The results can be further used to drive some promotion of ads, suggest friends or relevant events, etc.
 
 ## Instructions to compile:
-Execute on CLI -  
+Execute on CLI:  
 set HADOOP_CLASSPATH=%JAVA_HOME%/lib/tools.jar  
 hadoop com.sun.tools.javac.Main Graph.java  
 
 move class files to edu/uta/cse6331/  
 
+Create jar file:  
 jar cvf g.jar edu/uta/cse6331/*.class  
 
 ## Instructions to run:
 Upload input files to hdfs   
 Create directory to store intermediate files   
 
+Run:  
 hadoop jar g.jar edu/uta/cse6331/Graph /input_directory /intermediate /output
